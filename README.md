@@ -1,8 +1,16 @@
-# gatsby-starter-blog
-Gatsby starter for creating a blog
+# gatsby-amp-starter-blog
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
+A gatsby starter for creating an AMP compliant blog.
+
+Not sure what Amp is? Learn about [Project AMP](https://www.ampproject.org).
 
 ## Running in development
-`gatsby develop`
+`npm run develop`
+
+## Building for production
+
+To create a production build, run `npm run build`
+
+The build will output to the `public` directory and that directory will contain an `amp` directory which has the amp version of your site.
+
+You can then spin up a web server using MAMP or your tool of choice locally that points to your public directory. And test that your site is AMP compliant using this [Chrome Extension](https://chrome.google.com/webstore/detail/amp-validator/nmoffdblmcmgeicmolmhobpoocbbmknc?hl=en)
