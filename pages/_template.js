@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router'
 import { Container } from 'react-responsive-grid'
 import { prefixLink } from 'gatsby-helpers'
-import { rhythm, scale } from 'utils/typography'
 import { config } from 'config'
 
 class Template extends React.Component {
@@ -13,8 +12,6 @@ class Template extends React.Component {
       header = (
         <h1
           style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
             marginTop: 0,
           }}
         >
@@ -34,8 +31,9 @@ class Template extends React.Component {
       header = (
         <h3
           style={{
-            fontFamily: 'Montserrat, sans-serif',
+            fontFamily: 'Roboto, sans-serif',
             marginTop: 0,
+            color: 'red',
           }}
         >
           <Link
@@ -54,8 +52,6 @@ class Template extends React.Component {
     return (
       <Container
         style={{
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3/4)}`,
         }}
       >
         {header}
