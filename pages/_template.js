@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router'
 import { Container } from 'react-responsive-grid'
 import { prefixLink } from 'gatsby-helpers'
-import { rhythm, scale } from 'utils/typography'
 import { config } from 'config'
 
 class Template extends React.Component {
@@ -11,19 +10,8 @@ class Template extends React.Component {
     let header
     if (location.pathname === prefixLink('/')) {
       header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
+        <h1>
           <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
             to={prefixLink('/')}
           >
             {config.blogTitle}
@@ -32,18 +20,8 @@ class Template extends React.Component {
       )
     } else {
       header = (
-        <h3
-          style={{
-            fontFamily: 'Montserrat, sans-serif',
-            marginTop: 0,
-          }}
-        >
+        <h3>
           <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
             to={prefixLink('/')}
           >
             {config.blogTitle}
@@ -53,10 +31,6 @@ class Template extends React.Component {
     }
     return (
       <Container
-        style={{
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3/4)}`,
-        }}
       >
         {header}
         {children}

@@ -1,10 +1,9 @@
-/*
-
-Zenburn style from voldmar.ru (c) Vladimir Epifanov <voldmar@voldmar.ru>
-based on dark.css by Ivan Sagalaev
-
-*/
-
+#react-mount{
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.625rem 1.3125rem;
+}
 .markdown pre {
   display: block;
   background: #3F3F3F;

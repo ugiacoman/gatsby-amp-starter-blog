@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router'
 import sortBy from 'lodash/sortBy'
 import { prefixLink } from 'gatsby-helpers'
-import { rhythm } from 'utils/typography'
 import Helmet from "react-helmet"
 import access from 'safe-access'
 import { config } from 'config'
@@ -22,11 +21,9 @@ class BlogIndex extends React.Component {
         pageLinks.push(
           <li
             key={page.path}
-            style={{
-              marginBottom: rhythm(1/4),
-            }}
           >
-            <Link style={{boxShadow: 'none'}} to={prefixLink(page.path)}>{title}</Link>
+            <Link 
+            to={prefixLink(page.path)}>{title}</Link>
           </li>
         )
       }
