@@ -11,7 +11,7 @@ html, body {
 }*/
 
 .logo {
-  padding: 3rem 3rem 1rem 3rem;
+  padding: 2rem 3rem 1rem 3rem;
 }
 
 a {
@@ -22,6 +22,26 @@ a {
 h4 {
   color: #FF8A65;
   font-weight: 500;
+}
+
+.app {
+  padding: 0rem 3rem 1rem 3rem;
+}
+
+.flex {
+  margin: auto;
+  max-width: 650px;
+  padding: 0 3rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .flex {
+    padding: 0 0 0 0;
+  }
+  .app .logo {
+    padding-left: 0rem;
+  }
+
 }
 
 

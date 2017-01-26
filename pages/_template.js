@@ -29,16 +29,17 @@ class Template extends React.Component {
       )
     }
     return (
-      <div
-      >
-      <div className='logo'>
-          <Link to={prefixLink('/')}>udiscover.me </Link>
-            ( 
-              <a href='//github.com/ugiacoman/ugiacoman.github.io'>src</a>
-            ) 
-      </div>              
-        {header}
-        {children}
+      <div className='app'>
+        <div className='logo'>
+            <Link to={prefixLink('/')}>udiscover.me </Link>
+              ( 
+                <a href='//github.com/ugiacoman/ugiacoman.github.io'>src</a>
+              ) 
+        </div>
+        <div className='flex'>
+          {header}
+          {children}
+        </div>
       </div>
     )
   }
