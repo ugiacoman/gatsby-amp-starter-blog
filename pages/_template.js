@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router'
-import { Container } from 'react-responsive-grid'
 import { prefixLink } from 'gatsby-helpers'
 import { config } from 'config'
 
@@ -30,11 +29,17 @@ class Template extends React.Component {
       )
     }
     return (
-      <Container
+      <div
       >
+      <div className='logo'>
+          <Link to={prefixLink('/')}>udiscover.me </Link>
+            ( 
+              <a href='//github.com/ugiacoman/ugiacoman.github.io'>src</a>
+            ) 
+      </div>              
         {header}
         {children}
-      </Container>
+      </div>
     )
   }
 }

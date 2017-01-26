@@ -31,7 +31,7 @@ class BlogIndex extends React.Component {
     return (
       <div>
         <Helmet
-          title={config.blogTitle}
+          title={config.authorName}
           meta={[
             {"name": "description", "content": "Sample blog"},
             {"name": "keywords", "content": "blog, articles"},

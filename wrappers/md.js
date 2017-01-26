@@ -4,6 +4,7 @@ import Helmet from "react-helmet"
 import ReadNext from '../components/ReadNext'
 import { config } from 'config'
 import Bio from 'components/Bio'
+import { Link } from 'react-router'
 
 import '../css/styles.css'
 
