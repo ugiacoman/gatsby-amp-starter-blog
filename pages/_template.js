@@ -9,13 +9,18 @@ class Template extends React.Component {
     let header
     if (location.pathname === prefixLink('/')) {
       header = (
-        <h1>
-          <Link
-            to={prefixLink('/')}
-          >
-            {config.blogTitle}
-          </Link>
-        </h1>
+        <div>
+          <h1>
+            <Link
+              to={prefixLink('/')}
+            >
+              {config.blogTitle}
+            </Link>
+          </h1>
+          <h3>
+            Web + iOS
+          </h3>
+        </div>        
       )
     } else {
       header = (
@@ -31,13 +36,10 @@ class Template extends React.Component {
     return (
       <div className='app'>
         <div className='logo'>
-            <Link to={prefixLink('/')}>udiscover.me </Link>
-              ( 
-                <a href='//github.com/ugiacoman/ugiacoman.github.io'>src</a>
-              ) 
+            <Link to={prefixLink('/')}>land of dev</Link>
         </div>
         <div className='flex'>
-          {header}
+          {header}          
           {children}
         </div>
       </div>

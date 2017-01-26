@@ -3,13 +3,6 @@ html, body {
   margin: 0;
 }
 
-/*#react-mount {
-  max-width: 42rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2.625rem 1.3125rem;
-}*/
-
 .logo {
   padding: 2rem 3rem 1rem 3rem;
 }
@@ -34,27 +27,65 @@ h4 {
   padding: 0 3rem;
 }
 
+#instagram {
+  font-size: 2rem;
+}
+
+blockquote {
+    margin-left: -1.75rem;
+    margin-right: 1.75rem;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 1.42188rem;
+    padding-right: 0;
+    padding-top: 0;
+    margin-bottom: 1.75rem;
+    line-height: 1.75rem;
+    color: hsla(0,0%,0%,0.59);
+    font-style: italic;
+    border-left: 0.32813rem solid hsla(0,0%,0%,0.9);
+}
+
 @media only screen and (max-width: 500px) {
   .flex {
     padding: 0 0 0 0;
   }
   .app .logo {
-    padding-left: 0rem;
+    padding-left: 0;
+  }
+  .app {
+    padding: 0rem 2rem 1rem 2rem;
   }
 
+  blockquote {
+      margin-left: -1.75rem;
+      margin-right: 1.75rem;
+      margin-top: 0;
+      padding-bottom: 0;
+      padding-left: 1rem;
+      padding-right: 0;
+      padding-top: 0;
+      margin-bottom: 1.75rem;
+      line-height: 1.75rem;
+      color: hsla(0,0%,0%,0.59);
+      font-style: italic;
+      border-left: 0.32813rem solid hsla(0,0%,0%,0.9);
+  }  
 }
 
+/*
+Zenburn style from voldmar.ru (c) Vladimir Epifanov <voldmar@voldmar.ru>
+based on dark.css by Ivan Sagalaev
+*/
 
-
-
-/*.markdown pre {
+.markdown pre {
   display: block;
   background: #3F3F3F;
   color: #DCDCDC;
   overflow-y: hidden;
-}*/
+}
 
-/*.markdown pre code {
+.markdown pre code {
   background: none;
   border: none;
   border-radius: 3px;
@@ -189,4 +220,3 @@ code {
 .xml .hljs-cdata {
   opacity: 0.5;
 }
-*/

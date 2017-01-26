@@ -38,6 +38,7 @@ class BlogIndex extends React.Component {
           ]}
         />
         <Bio />
+        <h4>Writings: </h4>
         <ul>
           {pageLinks}
         </ul>

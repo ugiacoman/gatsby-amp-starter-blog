@@ -146,7 +146,7 @@ const ampify = function(html, filePath) {
   });
   
   // Add any needed fonts
-  $("head").append($('<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700%2C300%2C800&ver=4.6.1" />'));
+  $("head").append($('<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />'));
 
   // remove style attributes from everything. No inline styles with amp
   $( "*" ).removeAttr('style');

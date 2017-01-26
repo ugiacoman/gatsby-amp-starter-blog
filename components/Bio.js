@@ -1,16 +1,17 @@
 import React from 'react'
 import { config } from 'config'
 import { prefixLink } from 'gatsby-helpers'
+import TiSocialInstagram from 'react-icons/lib/ti/social-instagram';
 
 class Bio extends React.Component {
   render () {
     return (
       <div>
-        <h3>
-          Web + iOS
-        </h3>
         <p>
-          <strong>{config.authorName}</strong>. who lives and works in San Francisco building useful things. <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a>
+          <strong>{config.authorName}</strong> likes to build in the land of dev. Follow on <a id='instagram' href="https://www.instagram.com/ulisantosg/" target='_blank'><TiSocialInstagram/></a>
+        </p>
+        <p>
+          Projects | Github
         </p>
       </div>
     )

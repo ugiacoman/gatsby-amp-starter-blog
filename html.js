@@ -33,7 +33,7 @@ module.exports = React.createClass({
           {head.meta.toComponent()}
           {css}
         </head>
-        <body className="landing-page">  
+        <body>  
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: body }} />
           <script src={prefixLink(`/bundle.js?t=${BUILD_TIME}`)} />
         </body>
