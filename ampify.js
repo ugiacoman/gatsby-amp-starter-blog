@@ -13,7 +13,7 @@ const sass              = require('node-sass');
 //  Creating an amp version ultimately means creating an 'amp'
 //  directory in that with amp versions of each file from the source.
 const inputDir = 'public';
-const outputDir   = 'amp';
+const outputDir   = '../amp';
 
 // Directories within the inputDir that we will not be ampifying
 const ignoreDirs = [
